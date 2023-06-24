@@ -42,15 +42,21 @@ try {
         sleep(1000)
         for (let i = 8; i < 5000; i++) {
             console.log(`${getDateNow()} --> Started deleting ${i}th tweet`);
-            await page.waitForXPath(`/html/body/div[1]/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div/section/div/div/div/div/div[${i}]/div/div/article/div/div/div[2]/div[2]/div[1]/div/div[2]/div/div/div/div/div`).then(async (e) => {
+            await page.waitForXPath(`/html/body/div[1]/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div/section/div/div/div/div/div[${i}]/div/div/article/div/div/div[2]/div[2]/div[1]/div/div[2]/div/div/div/div/div`, {
+                timeout: 0
+            }).then(async (e) => {
                 await e.click()
                 console.log(`${getDateNow()} --> Clicked ${i}th tweet on infos button`);
             })
-            await page.waitForXPath(`/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div[1]/div[2]/div`).then(async (e) => {
+            await page.waitForXPath(`/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div[1]/div[2]/div`, {
+                timeout: 0
+            }).then(async (e) => {
                 await e.click()
                 console.log(`${getDateNow()} --> Clicked ${i}th tweet on delete button`);
             })
-            await page.waitForXPath(`/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div`).then(async (e) => {
+            await page.waitForXPath(`/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div`, {
+                timeout: 0
+            }).then(async (e) => {
                 await e.click()
                 console.log(`${getDateNow()} --> Clicked ${i}th tweet on confirm delete button`);
             })
