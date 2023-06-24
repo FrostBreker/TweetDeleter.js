@@ -19,5 +19,9 @@
     "name": "FrostBreker",
     "url": "https://github.com/FrostBreker/TweetDeleter.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "puppeteer": "^20.7.3"
+  }
 }
