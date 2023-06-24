@@ -9,9 +9,8 @@ This is a simple script that will delete all of your tweets. It uses Puppeteer t
 1. Clone this repository
 2. Run `npm install`
 3. Edit `.env` and change the `username` and `password` variables to your Twitter username and password
-4. Edit cookies.json.example to cookies.json
-5. Run `npm start`
-6. Wait for the script to finish
+4. Run `npm start`
+5. Wait for the script to finish
 
 ## Why?
 
