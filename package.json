@@ -1,0 +1,23 @@
+{
+  "name": "tweetdeleter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "keywords": [
+    "twitter",
+    "delete",
+    "tweets",
+    "nodejs",
+    "javascript",
+    "pupeeter"
+  ],
+  "author": {
+    "name": "FrostBreker",
+    "url": ""
+  },
+  "license": "MIT"
+}
